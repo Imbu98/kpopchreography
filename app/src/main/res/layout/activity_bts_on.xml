@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BTSbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="방탄소년단" />
+
+            <Button
+                android:id="@+id/LeSserafimbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="르세라핌" />
+
+            <Button
+                android:id="@+id/TXTbtn"
+                android:layout_width="225dp"
+                android:layout_height="39dp"
+                android:autoText="false"
+                android:text="TXT" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="184dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/BTS_IDOL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이돌(IDOL)" />
+
+            <Button
+                android:id="@+id/BTS_ON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="온(ON)" />
+
+            <Button
+                android:id="@+id/BTS_BUTTER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="버터(BUTTER)" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="70dp"
+        android:text="아이돌을 선택해주세요"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="44dp"
+        android:text="노래를 선택해주세요"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/bts_on_choreo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        android:text="안무영상"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bts_on_stage"
+        app:layout_constraintEnd_toStartOf="@+id/bts_on_stage" />
+
+    <Button
+        android:id="@+id/bts_on_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="156dp"
+        android:text="무대영상"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bts_on_fancam"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:text="직캠"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bts_on_stage"
+        app:layout_constraintStart_toEndOf="@+id/bts_on_stage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
